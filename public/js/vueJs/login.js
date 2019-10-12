@@ -8,7 +8,9 @@
 		correo: '',  
 		password: '',
 		idPlanDeEstudio: '',
-		respuesta: document.querySelector("#respuesta")
+		respuesta: document.querySelector("#respuesta"),
+		correoLogin: '',
+		passwordLogin: ''
 	},
 	methods:{
 		insertUsuario: function(){
@@ -56,6 +58,21 @@
 
 			  });
 
+		},
+
+		iniciarSesion: function(){
+
+			axios.post('http://localhost/ExtemporaneosVue/API/controllers/login/login.php',{
+
+				correo: app.correoLogin,
+				password: app.passwordLogin,
+			})
+			.then(function(response){
+				console.log(response.data);
+			})
+			.catch(function(error){
+				console.log(error);
+			})
 		}
 	}
 })

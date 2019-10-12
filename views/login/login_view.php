@@ -24,10 +24,11 @@
 
 		<div class="login" id="login">
 			<a href="" class="cerrar" id="cerrar"><i class="fa fa-times" aria-hidden="true"></i></a>
-			<form method="POST" action="iniciarSesion_back.php">
-				<input type="text" name="correo" required placeholder="Usuario">
-				<input type="password" name="password" requered placeholder="********">
-				<input type="submit" value="Entrar" >
+			<form method="POST">
+				<input type="text" v-model="correoLogin" required placeholder="Usuario">
+				<input type="password" v-model="passwordLogin" requered placeholder="********">
+				<!--<input type="submit" value="Entrar" >-->
+				<button @click.prevent="iniciarSesion">Entrar</button>
 			</form>
 			<a href="#" onclick="aparecerRecuperarPassword()">Olvide mi contrseña</a>
 		</div>

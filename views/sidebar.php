@@ -15,7 +15,7 @@
             <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-dashboard fa-fw mr-3"></span> 
-                    <span class="menu-collapsed">Alumno</span>
+                    <span class="menu-collapsed"><?php if($_SESSION['datosUsuario']['privilegios'] == 1){echo "Aministrador";}else{echo "Alumno";}  ?></span>
                     <span class="submenu-icon ml-auto"></span>
                 </div>
             </a>
@@ -31,10 +31,10 @@
             <!-- Submenu content -->
             <div id='submenu2' class="collapse sidebar-submenu">
                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Nombre</span>
+                    <span class="menu-collapsed"><?php echo $_SESSION['datosUsuario']['nombre']?></span>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="menu-collapsed">Apellidos</span>
+                    <span class="menu-collapsed"><?php echo $_SESSION['datosUsuario']['correo']?></span>
                 </a>
             </div>            
 

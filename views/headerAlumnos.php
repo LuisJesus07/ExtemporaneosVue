@@ -1,3 +1,9 @@
+<?php
+	session_start(); 
+	if(empty($_SESSION['datosUsuario']['privilegios']) || $_SESSION['datosUsuario']['privilegios'] != 2){
+	header("location:../login/login_view.php");
+} 
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,7 +38,7 @@
 			        <a class="nav-link" href="consultarExamenes_view.php">Mis Examenes</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="../login/cerrarSesion_back.php" tabindex="-1" aria-disabled="true">Salir</a>
+			        <a class="nav-link" href="../../API/controllers/login/cerrarSesion.php" tabindex="-1" aria-disabled="true">Salir</a>
 			      </li>
 			    </ul>
 			  </div>

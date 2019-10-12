@@ -101,7 +101,6 @@ class Usuario{
 
 		return $siExiste;
 
-		//return $statement->fetch(PDO::FETCH_ASSOC)[0];
 	}
 
 
