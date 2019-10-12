@@ -1,0 +1,846 @@
+@import url("https://fonts.googleapis.com/css?family=Varela");
+
+* {
+	margin: 0; 
+	padding: 0;
+	color: #000;
+
+	
+}
+
+
+.header{
+	/*background: url('../img/uabcs-2.jpg') no-repeat; */
+	background-color: #30608F;
+	background-size: cover;
+	width: 100%;
+	height: 150px;
+}
+
+.main-header{
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	height: 100px;
+	margin-top: 20px;
+	box-shadow: 0 5px 10px 0px rgba(0,0,0,0.2);
+	
+}
+
+.logo img{
+    width: 180px;
+    margin-top: 1.5%;
+    margin-left: 5%;
+}
+
+.menu-container{
+	text-align: center;
+	float: right;
+    margin-top: 2.5%;
+    margin-right: 35%;
+}
+
+/* login_view */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px; 
+	color: #fff;
+	background: #000;
+	font-family: 'Open Sans', sans-serif;
+}
+section.principal {
+	background: url('../img/uabcs-2.jpg');
+	background-size: cover;
+	padding: 10em 7em;
+	width: 100%;	
+	height: 100vh;
+}
+.principal h1, h2 {
+	font-size: 3em;
+	text-shadow: 2px 5px 10px #000;
+	text-transform: uppercase;
+	margin-bottom: .5em;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+.principal h2 {
+	font-size: 1.7em;
+	margin-bottom: 1em;
+	color: #f8e500;
+}
+.principal p {
+	/*Interlineado*/
+	line-height: 26px;
+	margin-bottom: 3em;
+	color: #fff;
+}
+a.bt-home {
+	border: 1px solid #fff;
+	border-radius: 10px;
+	width: 200px;
+	padding: 1em;
+	margin: 0 1em;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	background: rgba(0,0,0,.3);
+	transition: all linear .3s;
+}
+a.bt-home:hover {
+	background: rgba(0,0,0,.7);
+	transition: all linear .3s;
+	transform: scale(1.1);
+}
+i.separar {
+	padding-right: 15px;
+	color: #fff;
+}
+.login {
+	background: #fff;
+	width: 100%;
+	padding: 1em;
+	text-align: center;
+	position: absolute;
+	top: -100px;
+	border-bottom: 3px solid #f8e500;
+}
+input {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: .5em;
+	outline: 0;
+}
+input[type="submit"]{
+	background: #00a54d;
+	cursor: pointer;
+	color: #fff;
+}
+input[type="submit"]:hover{
+	transition: all linear .3s;
+	transform: scale(1.1);
+}
+.cerrar {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: inline-block;
+	float: right;
+	color: #fff;
+	background: #ccc;
+}
+.oscurecer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	display: none;
+	background: rgba(0,0,0,.8);
+}
+.registrar {
+	width: 40%;
+	background: #fff;
+	border-radius: 1em;
+	padding: 3em;
+	position: fixed;
+	top: 30px;
+	left: 30%;
+	z-index: 200;
+	display: none;
+}
+.registrar h1 {
+    text-align: center;
+    margin-bottom: 4%;
+	color: #333;
+	text-shadow:none;
+}
+.registrar input {
+	width: 100%;
+	padding: 1em;
+	margin-bottom: 10px;
+}
+
+.registrar select{
+	width: 70%;
+    padding: 1em;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.cerrarRegistro{
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #fbfbfb;
+	border: 3px solid #ccc;
+	color: #000;
+	cursor: pointer;
+}
+
+.registro-exitoso{
+	width: 40%;
+	background: #fff;
+	border-radius: 1em;
+	padding: 3em;
+	position: fixed;
+	top: 30px;
+	left: 30%;
+	z-index: 200;
+	display: none;
+}
+
+.registro-exitoso img{
+	margin-left: 30%;
+	width: 40%;
+}
+
+.registro-exitoso label{
+	display: grid;
+	text-align: center;
+	font-size: 1.8em;
+    margin-top: 3%;
+    margin: 1.8em;
+}
+
+.registro-exitoso button{
+	cursor: pointer;
+	background-color: #3085d7;
+	color: white;
+	width: 30%;
+	height: 50px;
+	margin-left: 34%;
+	border: none;
+	font-family: 'Varela';
+}
+
+.registro-exitoso button:hover{
+	transition: all linear .3s;
+	transform: scale(1.1);
+}
+
+.recuperar-password{
+	width: 30%;
+	background: #fff;
+	border-radius: 1em;
+	padding: 3em;
+	position: fixed;
+	top: 30px;
+	left: 35%;
+	z-index: 200;
+	display: none;
+}
+
+.recuperar-password img{
+	margin-left: 28%;
+}
+
+.recuperar-password form input{
+	display: block;
+}
+
+.recuperar-password input[type="email"]{
+	width: 80%;
+	margin-top: 2%;
+	margin-left: 10%;
+}
+
+.recuperar-password input[type="submit"]{
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+/* fin login  */
+
+
+.login{
+	margin-right: 5%;
+}
+
+.login-principal{
+	width: 100%;
+	height: 100vh;
+	background-image: url('../img/uabcs-1.jpg');
+	background-size: cover; 
+	background-repeat: no-repeat; 
+}
+
+.form-registro{
+	float: right;
+	width: 40%;
+	background-color: white;
+}
+
+.form-registro input{
+	width: 70%;
+	margin-left: 10%;
+}
+
+.form-registro label{
+	display: block;
+}
+
+.menu ul{
+	list-style: none;
+	text-decoration: none;
+}
+
+.menu ul li{
+	font-family: Varela; 
+	display: inline-block;
+	margin: 5px 10px;
+
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color: black;
+
+}
+
+.menu ul li a:hover{
+	color: #007bff;
+	transition: all linear .3s;
+}
+
+.salir{
+	font-size: 23px;
+    margin-right: -700px;
+}
+
+.admin-info{
+	display: flow-root;
+	width: 30%;
+	height: 800px;
+	
+}
+
+.admin-info img{
+	border-radius: 50%;
+	width: 50%;
+	height: 200px;
+	margin-top: 10%;
+	margin-left: 25%;
+	background-color: #8c8c8c;
+	box-shadow: 3px 5px 10px 5px rgba(0,0,0,0.2);
+}
+
+.admin-info p{
+	font-family: Varela;
+	font-size: 3.5vh;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.info-cuenta{
+	width: 60%;
+	margin: 0 auto;
+	background-color: red;
+	margin-top: 3%;
+}
+
+.info-cuenta-cabecera{
+	font-family: 'Open Sans', Tahoma, Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+	font-weight: bolder;
+	padding: 5px;
+	background: linear-gradient(#0077d2, #005a9f);
+	color: white;
+	border-style: double;
+
+}
+
+.informacion{
+	font-size: 17px;
+	color: black;
+	font-weight: unset;
+	background: #d5dee6;
+	border-style: unset;
+	border-width: 2px;
+}
+
+.social{
+	width: 80%;
+	height: 150px;
+	margin-left: 10%;
+	margin-top: 35%;
+}
+
+.social img{
+	border-radius: 0px;
+	background-color: white;
+	width: 65%;
+	height: 65px;
+	margin-left: 18%;
+	margin-top: 3%;
+	margin-bottom: 10%;
+	box-shadow: none;
+}
+
+.iconos-social i{
+	color: #5290bb;
+	font-size: 50px;
+	margin-left: 25%;
+}
+
+
+
+.opciones{
+	display: flow-root;
+	float: right;
+	width: 68%;
+	height: 800px;
+    border: 3px solid #D6D2D2;
+}
+
+.opciones h1{
+	color: black;
+	text-shadow: 1px 2px 3px #000;
+	font-family: Varela;
+	font-size: 6vh;
+	text-align: center;
+	margin-top: 2%;
+}
+
+.opciones-btn{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px , 1fr));
+	width: 90%;
+	height: 80%;
+	margin-top: 3%;
+	margin-left: 6%;
+
+}
+
+.opcion input{
+	font-family: Varela;
+	cursor: pointer;
+	margin-left: 12%;
+	margin-top: 3%;
+	border: 2px solid #757575;
+    width: 150px;
+    padding: 1em;
+    color: black;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+    background-color: white;
+    text-decoration: none;
+}
+
+.opcion input:hover{
+	background: #0d72b9;
+	color: white;
+	transition: all linear .2s;
+	transform: scale(1.1);
+}
+
+/* Error */
+
+.error-404 img{
+
+    margin-left: 10%;
+    margin-top: 1%;
+    width: 80%;
+
+}
+
+/* consultagrupos */
+
+.busqueda{
+	font-family: 'Open Sans', Tahoma, Georgia, "Times New Roman", Times, serif;
+	margin-left: 20%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.busqueda input{
+	font-family: 'Open Sans', Tahoma, Georgia, "Times New Roman", Times, serif;
+	background-color: #eceff1;
+	width: 100px;
+	height: 33px;
+	border-width: 1px;
+	cursor: pointer;
+}
+
+.tabla{
+	margin: auto;
+	width: 90%;
+	background: #d5dee6;
+	margin-bottom: 3%;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+
+}
+
+
+.tabla thead tr th{
+	font-family: 'Open Sans', Tahoma, Georgia, "Times New Roman", Times, serif;
+	color: white;
+	background: linear-gradient(#0077d2, #005a9f);
+
+}
+
+.tabla tbody tr td{
+	height: 35px;
+	text-align: justify;
+	font-family: 'Open Sans', Tahoma, Georgia, "Times New Roman", Times, serif;
+}
+
+tr:nth-child(even){
+	background-color: #eaeef0;
+}
+
+.estado-2{
+	background-color: #f5d4d7 !important;
+}
+
+/* estilos tabla */
+.dt-buttons{
+	margin-left: 50%;
+    margin-left: 80%;
+    margin-top: 1%;
+
+}
+
+.dt-button{
+	text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+
+.dt-button span{
+	color: white;
+}
+
+.buttons-pdf{
+	background-color: #e85844;
+}
+
+.buttons-excel{
+	background-color: #2f854f;
+}
+
+.dataTables_filter{
+	margin-left: 25%;
+	margin-top: -50px;
+}
+
+
+
+/* consulta alumno */
+
+.consulta-alumno{
+	width: 95%;
+	margin-top: 3%;
+	margin: none;
+}
+
+/* registrar */
+
+.panel{
+	width: 90%;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border: solid 1px #9abbda;
+    box-shadow: 2px 2px 5px 2px #c1d5e8;
+    font-family: 'Open Sans', Tahoma, Georgia, "Times New Roman", Times, serif;
+
+} 
+
+.panel h2{
+	color: black;
+	margin:auto;
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: #eceff1;
+	border-bottom: solid 1px #eceff1;
+}
+
+.panel input{
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: 1.2em;
+}
+
+.panel select{
+	margin-top: 2%;
+	font-size: 1.2em;
+} 
+
+.panel label{
+	font-size: 1.2em;
+	padding-left: 2%;
+}
+
+/* menuConsultarExamenes */
+
+.filtro{
+	width: 70%;
+}
+
+.filtro h4{
+	background: linear-gradient(#0077d2, #005a9f);
+	color: white;
+	margin:auto;
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: #eceff1;
+	border-bottom: solid 1px #eceff1;
+}
+
+.filtro select{
+	margin-left: 5%;
+}
+
+.filtro input{
+	margin-left: 75%;
+	text-shadow: 2px 5px 10px #000;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	width: 100px;
+	padding: 0.5em;
+	color: #fff;
+	text-decoration: none;
+	background: #00a54d;
+	cursor: pointer;
+}
+
+.input-materia input{
+	text-shadow: none;
+	color: black;
+	width: 60%;
+	border-color: gray;
+	background-color: white;
+	padding: .1em;
+	cursor: initial;
+	margin-left: 3%;
+}
+
+.btn-registrar{
+	text-shadow: 2px 5px 10px #000;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	width: 200px;
+	padding: 0.5em;
+	color: #fff;
+	text-decoration: none;
+	background: #00a54d;
+	cursor: pointer;
+	margin-left: 70%;
+}
+
+.btn-eliminar i{
+	font-size: 19px;
+	align-items: center;
+	padding-left: 35%;
+	color: #e34724;
+	cursor: pointer;
+}
+
+.btn-consulta i{
+	font-size: 19px;
+	align-items: center;
+	padding-left: 35%;
+	color: #ffc109;
+	cursor: pointer;
+	
+}
+
+
+
+.error{
+	margin:auto;
+	text-align: center;
+	width: 80%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	color: #a94442;
+	background-color: #f2dede;
+	border-radius: 4px;
+	border: 1px solid #a94442;
+}
+
+.exito{
+	background-color: #dff0d8;
+	border: 1px solid #008100;
+	color: #3c763d;
+}
+
+/* alerta */
+.alerta{
+	background-color: #fff1a8;
+	margin: 5%;
+}
+
+.alerta p{
+	float: right;
+	margin-right: 15%;
+	margin-top: 3%;
+}
+
+.alerta img{
+	margin-left: 4%;
+	width: 8%;
+}
+
+/* consultacalificaciones */
+
+.datos-tabla{
+	width: 100%;
+}
+
+.datos-table table{
+	margin-top: 4%
+}
+
+.tabla-calif tbody tr td{
+	text-align: center;
+
+}
+
+.busqueda-calificaciones label{
+	margin-left: 28%;
+}
+
+/*calificaciones index */
+.datos-materia{
+	width: 70%;
+	height: 115px;
+	margin-bottom: 2%;
+}
+.datos-materia h2{
+	padding-left: 3%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-bottom: 1%;
+	background-color: #eceff1;
+	border-bottom: solid 1px #eceff1;
+
+
+}
+
+.datos-materia label{
+	padding-bottom: : 2%;
+}
+
+/*consulta credencial*/
+
+.credencial{
+	background-image: url('../img/credencial.jpg');
+	margin: 0 auto;
+	margin-bottom: 2%;
+	width: 1187px;
+	height: 333px;
+	font-size: 18px;
+}
+
+/* info frente */
+.credencial-frente{
+	padding-top: 8%;
+	width: 50%;
+    height: 333px;
+
+}
+
+.foto-credencial{
+	width: 50%;
+}
+
+.foto-credencial img{
+	width: 100px;
+    margin-top: 10%;
+    margin-left: 4%;
+
+}
+
+.foto-credencial label strong{
+    font-size: 14px;
+    padding-left: 4%;
+    color: red;
+}
+
+.info-frente{
+	float: right;
+	width: 50%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+/* info atras */
+.credencial-atras{
+	float: right;
+	padding-top: 8%;
+	width: 50%;
+    height: 333px;
+
+}
+
+.info-atras{
+	width: 50%;
+	margin-left: 15%;
+}
+
+.firma{
+    margin-top: 25%;
+    margin-left: 10%;
+}
+
+/* login */
+.form-login{
+	float: right;
+	width: 40%;
+	height: 77.2vh;
+}
+
+.form-login h1{
+	font-family: Varela;
+	font-size: 6vh;
+	text-align: center;
+	margin-top: 2%;
+}
+
+.form-login form{
+	margin-top: 5%;
+	margin-left: 18%;
+}
+
+.form-login form input{
+	margin-top: 4%;
+	width: 80%;
+	height: 5vh;
+}
+
+.iniciar{
+    width: 154px;
+    height: 35px;
+    margin-top: 7%;
+    margin-left: 25%;
+}
+
+.social-login{
+	width: 60%;
+	margin-left: 22%;
+	margin-top: 10%;
+}
+
+.fondo-login{
+	width: 60%;
+	height: 77.2vh;
+	background: url('../img/UABCS.jpg');
+	background-size: cover;
+}
