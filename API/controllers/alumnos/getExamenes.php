@@ -29,6 +29,7 @@
 
 			$examen= array(
 
+				"idSolicitudExamen" => $idSolicitudExamen,
 				"idUsuario" => $idUsuario,
 				"numControl" => $numControl,
 				"plan" => $nombrePlan,

@@ -5,6 +5,8 @@ class Alumno{
 	private $conn;
 	private $table_name = "usuarios";
 
+	public $idSolicitudExamen;
+
 
 	function __construct($db){
 		$this->conn = $db;
@@ -30,6 +32,20 @@ class Alumno{
 		$statement->execute();
 
 		return $statement;
+	}
+
+	function deleteExamen(){
+
+		$query="DELETE FROM solicitudesExamenes WHERE idSolicitudExamen=".$this->idSolicitudExamen;
+
+		$statement = $this->conn->prepare($query);
+
+
+		if($statement->execute()){
+			return true;
+		}
+
+		return false;
 	}
 }
 

@@ -23,13 +23,13 @@
 			                </tr> 
 			            </thead>
 			            <tbody id="tbody-examenes">
-							<tr v-for="examen in examenes">
+							<tr v-for="examen in examenes" v-bind:class="{pendiente: examen.estado == 2}">
 								<td>{{ examen.numControl }}</td>
 								<td>{{ examen.plan }}</td>
 								<td>{{ examen.materia }}</td>
 								<td v-if="examen.estado==1">Aceptado</td>
 								<td v-else>Espera</td>
-								<td><a class="btn-eliminar"><i class="fas fa-trash-alt"></i></a></td>
+								<td><a class="btn-eliminar" @click.prevent="eliminarSolicitud(examen.idSolicitudExamen)"><i class="fas fa-trash-alt"></i></a></td>
 							</tr>
 			            </tbody>
 			        </table>
