@@ -15,7 +15,7 @@
 		    			<div class="plans">
 		    				<h3>Solicitar</h3>
 		    				<img class="d-block mx-auto img" src="../../public/img/solicitar.png">
-		    				<a href="solicitarExamen_view.php" class="btn mx-auto mt-3 btn-primary btn-lg">Solicitar</a>
+		    				<a href="solicitarExamen.php" class="btn mx-auto mt-3 btn-primary btn-lg">Solicitar</a>
 		    			</div>
 		    		</div>
 		    	</div>

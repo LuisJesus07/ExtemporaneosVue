@@ -39,7 +39,7 @@ class Login{
 
 			//guardar los datos de la sesion
 			session_start();
-			$_SESSION['datosUsuario'];
+			//$_SESSION['datosUsuario'];
 
 
 			while($row = $statement->fetch(PDO::FETCH_ASSOC)){

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 	header("Access-Control-Allow-Origin: *");//cuañquiera tiene acceso
 	header("Content-Type: aplication/json; charset=UTF-8");
@@ -12,42 +12,31 @@
 
 	$alumno = new Alumno($db);
 
-	//obtener los examenes 
-	$statement = $alumno->getAllExamenesById();
+	$statement = $alumno->getMateriasByPlan();
 	$num = $statement->rowCount();
 
-		
 	if($num > 0){
 
-		//arreglo de examenes
-		$examenes['examenes'] = array();
+		$materias['materias'] = array();
 
 		while($row = $statement->fetch(PDO::FETCH_ASSOC)){
 			extract($row);
 
-			$examen= array(
-
-				"idSolicitudExamen" => $idSolicitudExamen,
-				"idUsuario" => $idUsuario,
-				"numControl" => $numControl,
-				"plan" => $nombrePlan,
-				"materia" => $nombreMateria,
-				"estado" => $estado
-
+			$materia = array(
+				"idMateria" => $idMateria,
+				"nombreMateria" => $nombreMateria
 			);
 
-			array_push($examenes['examenes'], $examen);
+			array_push($materias['materias'], $materia);
 		}
 
 		http_response_code(201);
 
-		echo json_encode($examenes);
-		
+		echo json_encode($materias);
 	}else{
-
 		http_response_code(404);
 
-		echo json_encode(array("message" => "No se encontraron examenes"));
+		echo json_encode(array("message" => "No hay ninguna materia"));
 	}
 
 ?>

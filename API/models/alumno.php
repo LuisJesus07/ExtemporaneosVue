@@ -5,7 +5,11 @@ class Alumno{
 	private $conn;
 	private $table_name = "usuarios";
 
+	//examen
 	public $idSolicitudExamen;
+	public $estado;
+	public $fechaRegistro;
+	public $idMateria;
 
 
 	function __construct($db){
@@ -34,6 +38,63 @@ class Alumno{
 		return $statement;
 	}
 
+	function insertExamen(){
+
+		$query = "INSERT INTO solicitudesExamenes(estado,fechaRegistro,idUsuario,idMateria) VALUES(:estado,:fechaRegistro,:idUsuario,:idMateria);";
+
+		$statement = $this->conn->prepare($query);
+
+		$statement->bindParam(":estado", $this->estado);
+		$statement->bindParam(":fechaRegistro", $this->fechaRegistro);
+		$statement->bindParam(":idUsuario", $_SESSION['datosUsuario']['idUsuario']);
+		$statement->bindParam(":idMateria", $this->idMateria);
+
+		if($statement->execute()){
+			return true;
+		}
+
+		return false;
+
+	}
+
+	//verificar si el periodo de solicitudes esta activo
+	function verificarPeriodo(){
+
+		$query = "SELECT estado FROM periodo";
+
+		$statement = $this->conn->prepare($query);
+
+		$statement->execute();
+
+		$row = $statement->fetch(PDO::FETCH_ASSOC);
+		$estado = $row["estado"];
+
+
+		return $estado;
+
+	}
+
+	function totalExamenes(){
+
+		$query = "SELECT COUNT(USU.idUsuario)
+				FROM usuarios AS USU 
+				INNER JOIN planesDeEstudio AS PLAN ON PLAN.idPlanDeEstudio=USU.idPlanDeEstudio
+				INNER JOIN carreras AS CARR ON CARR.idCarrera=PLAN.idCarrera
+				INNER JOIN solicitudesExamenes AS SOLI ON USU.idUsuario=SOLI.idUsuario
+				INNER JOIN materias AS MAT ON MAT.idMateria=SOLI.idMateria
+				WHERE USU.idUsuario = :idUsuario";
+
+		$statement = $this->conn->prepare($query);
+
+		$statement->bindParam(":idUsuario", $_SESSION['datosUsuario']['idUsuario']);
+
+		$statement->execute();
+
+		$examenesSolicitados = $statement->fetch(PDO::FETCH_ASSOC);
+
+		return $examenesSolicitados["COUNT(USU.idUsuario)"];
+	}
+
 	function deleteExamen(){
 
 		$query="DELETE FROM solicitudesExamenes WHERE idSolicitudExamen=".$this->idSolicitudExamen;
@@ -46,6 +107,24 @@ class Alumno{
 		}
 
 		return false;
+	}
+
+	function getMateriasByPlan(){
+
+		$query = "SELECT MAT.idMateria,MAT.nombreMateria,PLAN.idPlanDeEstudio
+			FROM materias AS MAT
+			INNER JOIN planesDeEstudio AS PLAN ON MAT.idPlanDeEstudio=PLAN.idPlanDeEstudio
+			WHERE PLAN.idPlanDeEstudio = :idPlanDeEstudio
+			ORDER BY MAT.nombreMateria ASC";
+
+		$statement = $this->conn->prepare($query);
+
+		$statement->bindParam(":idPlanDeEstudio", $_SESSION['datosUsuario']['idPlanDeEstudio']);
+
+		$statement->execute();
+
+		return $statement;
+
 	}
 }
 

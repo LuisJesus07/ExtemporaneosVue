@@ -69,6 +69,19 @@
 			})
 			.then(function(response){
 				console.log(response.data);
+				const tipoUsuario = response.data;
+
+				if(tipoUsuario == "alumno"){
+					location.href = "../alumnos/menuAlumnos.php";
+				}
+
+				if(tipoUsuario == "admin"){
+					location.href = "../administrador/menuAdmin.php";
+				}
+
+				if(tipoUsuario == "error"){
+					swal("Error!", "Usuario o contraseña incorrecto.", "warning");
+				}
 			})
 			.catch(function(error){
 				console.log(error);

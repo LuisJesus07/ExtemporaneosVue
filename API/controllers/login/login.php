@@ -23,20 +23,23 @@
 		$login->correo = $data->correo;
 		$login->password = $data->password;
 
-
-		if($login->iniciarSesion() == 2){
-
-			echo "alumno";
-			//header("location:../../views/alumnos/menuAlumnos.php");//Redirigimos la pagina si es que el usuario existe en la BD al inicio
-		}else{
-			if($login->iniciarSesion() == 1){
+		switch ($login->iniciarSesion()) {
+			case 1:
 				echo "admin";
-			}else{
-
+				break;
+			case 2:
+				echo "alumno";
+				break;
+			default:
 				echo "error";
-			}
+				break;
 		}
 
+
+	}else{
+		http_response_code(404);
+
+		echo json_encode(array("message" => "Ingrese el correo y la contraseña"));
 	}
 
 ?>
