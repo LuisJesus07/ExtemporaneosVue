@@ -100,7 +100,7 @@ crossorigin="anonymous"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../../plugins/sweetalert.css">
 <script type="text/javascript" src="../../plugins/sweetalert.js"></script>
-<script type="text/javascript" src="../../public/js/vueJS/login.js"></script>
+<script type="text/javascript" src="../../public/js/login.js"></script>
 
 </body> 
 </html>

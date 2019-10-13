@@ -1,4 +1,3 @@
-<!-- header del alumno -->
 <?php include '../headerAlumnos.php' ?>
 
 <!-- inicio del sidebar -->

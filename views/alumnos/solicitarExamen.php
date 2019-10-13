@@ -44,4 +44,4 @@
 </div><!-- container -->
 
 <?php include '../scripts.php' ?>
-<script type="text/javascript" src="../../public/js/vueJs/solicitarExamen.js"></script>
+<script type="text/javascript" src="../../public/js/solicitarExamen.js"></script>

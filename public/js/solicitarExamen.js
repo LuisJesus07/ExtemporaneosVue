@@ -9,7 +9,7 @@ const app = new Vue({
 	},
 	methods:{
 		getMaterias: function(){
-			axios.get('http://localhost/ExtemporaneosVue/API/controllers/alumnos/getMaterias.php')
+			axios.get('../../API/controllers/alumnos/getMaterias.php')
 			.then(function(response){
 				//console.log(response.data.materias);
 				app.materias = response.data.materias;
@@ -20,7 +20,7 @@ const app = new Vue({
 			});
 		},
 		insertExamen: function(){
-			axios.post('http://localhost/ExtemporaneosVue/API/controllers/alumnos/createExamen.php',{
+			axios.post('../../API/controllers/alumnos/createExamen.php',{
 				idMateria: app.idMateria,
 			})
 			.then(function(response){
@@ -32,7 +32,7 @@ const app = new Vue({
 			});
 		},
 		verificarPeriodo: function(){
-			axios.get('http://localhost/ExtemporaneosVue/API/controllers/alumnos/verificarPeriodo.php')
+			axios.get('../../API/controllers/alumnos/verificarPeriodo.php')
 			.then(function(response){
 				//console.log(response.data.message);
 				var estadoPerido = response.data.message;

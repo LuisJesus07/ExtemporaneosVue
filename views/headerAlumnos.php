@@ -1,5 +1,4 @@
-<?php
-	session_start(); 
+<?php session_start(); 
 	if(empty($_SESSION['datosUsuario']['privilegios']) || $_SESSION['datosUsuario']['privilegios'] != 2){
 	header("location:../login/login_view.php");
 } 
@@ -21,7 +20,7 @@
 
 		<nav class="navbar navbar-expand-lg">
 		  <div class="container">
-			  <a class="navbar-brand" href="menuAlumnos_view.php"><img class="logo-brand" src="../../public/img/logouabcs1.png"></a>
+			  <a class="navbar-brand" href="menuAlumnos.php"><img class="logo-brand" src="../../public/img/logouabcs1.png"></a>
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			    <i class="fas fa-bars"></i>
 			  </button>

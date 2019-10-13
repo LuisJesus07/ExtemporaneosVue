@@ -14,7 +14,7 @@
 	},
 	methods:{
 		insertUsuario: function(){
-			axios.post('http://localhost/ExtemporaneosVue/API/controllers/usuario/createUsuario.php',{
+			axios.post('../../API/controllers/usuario/createUsuario.php',{
 				numControl: app.numControl,
 				nombre: app.nombre,
 				apellidoPaterno: app.apellidoPaterno,
@@ -62,7 +62,7 @@
 
 		iniciarSesion: function(){
 
-			axios.post('http://localhost/ExtemporaneosVue/API/controllers/login/login.php',{
+			axios.post('../../API/controllers/login/login.php',{
 
 				correo: app.correoLogin,
 				password: app.passwordLogin,
