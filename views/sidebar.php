@@ -42,6 +42,9 @@
             <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
                 <small>OPCIONES</small>
             </li>
+
+            <!-- Mostrar sidebar dependiendo del tipo de usuario alumno=2 admin=1-->
+            <?php if($_SESSION['datosUsuario']['privilegios'] == 2){ ?>
             <!-- /END Separator -->
             <a href="#" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
@@ -55,6 +58,22 @@
                     <span class="menu-collapsed">Mis Examenes <span class="badge badge-pill badge-primary ml-2">5</span></span>
                 </div>
             </a>
+
+            <?php }else{ ?>
+
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-clipboard fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Ver Solicitudes</span>
+                </div>
+            </a>
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-clipboard fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Aceptar Solicitudes</span>
+                </div>
+            </a>
+            <?php } ?>
             <!-- Separator without title -->
             <li class="list-group-item sidebar-separator menu-collapsed"></li>            
             <!-- /END Separator -->
@@ -67,7 +86,7 @@
             <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span id="collapse-icon" class="fa fa-2x mr-3"></span>
-                    <span id="collapse-text" class="menu-collapsed">Collapse</span>
+                    <span id="collapse-text" class="menu-collapsed">Ocultar</span>
                 </div>
             </a>
             <!-- Logo -->
