@@ -33,7 +33,7 @@
 		    			<div class="plans">
 		    				<h3>Configuraciones</h3>
 		    				<img class="d-block mx-auto img" src="../../public/img/config.png">
-		    				<a href="consultarExamenes.php" class="btn mx-auto mt-3 btn-primary btn-lg">Ver</a>
+		    				<a href="configuraciones.php" class="btn mx-auto mt-3 btn-primary btn-lg">Ver</a>
 		    			</div>
 		    		</div>
 		    	</div>

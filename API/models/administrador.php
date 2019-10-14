@@ -79,6 +79,58 @@ class Administrador{
 
 		return $statement;
 	}
+
+	function getEstadoSolicitudes(){
+
+		$query = "SELECT estado FROM periodo";
+
+		$statement = $this->conn->prepare($query);
+
+		$statement->execute();
+
+		$estado = $statement->fetch(PDO::FETCH_ASSOC);
+
+		return $estado['estado'];
+	}
+
+	function activarPeriodoSolicitudes(){
+
+		$query = "UPDATE periodo SET estado=1 WHERE idPeriodo=1";
+
+		$statement = $this->conn->prepare($query);
+
+		if($statement->execute()){
+			return true;
+		}
+
+		return false;
+	}
+
+	function desactivarPeriodoSolicitudes(){
+
+		$query = "UPDATE periodo SET estado=2 WHERE idPeriodo=1";
+
+		$statement = $this->conn->prepare($query);
+
+		if($statement->execute()){
+			return true;
+		}
+
+		return false;
+	}
+
+	function reiniciarCiclo(){
+
+		$query = "TRUNCATE TABLE solicitudesExamenes";
+
+		$statement = $this->conn->prepare($query);
+
+		if($statement->execute()){
+			return true;
+		}
+
+		return false;
+	}
 }
 
 ?>

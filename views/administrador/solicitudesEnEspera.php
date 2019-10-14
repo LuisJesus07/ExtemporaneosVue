@@ -1,7 +1,6 @@
 <?php include '../headerAdmin.php' ?>
 
 
-
 	<!-- MAIN -->
 	<div id="app">
 	    <div class="col">
@@ -47,8 +46,23 @@
 		</div>
 	</div>
 
+
     
 
 
-<?php include '../scripts.php' ?>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../plugins/sweetalert.css">
+<script type="text/javascript" src="../../plugins/sweetalert.js"></script>
 <script type="text/javascript" src="../../public/js/solicitudesEnEspera.js"></script>
+
+<script type="text/javascript" src="../../public/js/buttons/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../../public/js/buttons/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="../../public/js/buttons/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="../../public/js/buttons/jszip.min.js"></script>
+<script type="text/javascript" src="../../public/js/buttons/vfs_fonts.js"></script>
+<script type="text/javascript" src="../../public/js/buttons/buttons.print.min.js"></script>
+<script type="text/javascript" src="../../public/js/buttons/buttons.html5.min.js"></script>
+
+<script type="text/javascript" src="../../public/js/generarExcel.js"></script>

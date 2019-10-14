@@ -30,7 +30,7 @@ const app = new Vue({
 			},
 			function(){
 
-				axios.get('http://localhost/ExtemporaneosVue/API/controllers/administrador/updateEstadoExamen.php?idSolicitudExamen='+idSolicitudExamen)
+				axios.get('../../API/controllers/administrador/updateEstadoExamen.php?idSolicitudExamen='+idSolicitudExamen)
 				.then(function(response){
 					swal("Aceptada!", "La solicitu ha sido aceptada.", "success");
 					app.getExamenes();
