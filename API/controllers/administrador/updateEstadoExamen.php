@@ -1,9 +1,5 @@
 <?php
-	header("Access-Control-Allow-Origin: *");
-	header("Access-Control-Allow-Header: access");
-	header("Access-Control-Allow-Methods: GET");
-	header("Content-Type: application/json");
-
+	
 	include '../../config/database.php';
 	include '../../models/administrador.php';
 
@@ -12,18 +8,18 @@
 
 	$administrador = new Administrador($db);
 
-	$administrador->idSolicitudExamen = isset($_GET['idSolicitudExamen']) ? $_GET['idSolicitudExamen'] : die();
+	$administrador->idSolicitudExamen = isset($_POST['idSolicitudExamen']) ? $_POST['idSolicitudExamen'] : die();
 
 	if($administrador->updateEstadoExamen()){
 
-		http_response_code(201);
+		//http_response_code(201);
 
-		echo json_encode(array("message" => "Solicitud Aceptada"));
+		echo "solicitud aceptada";
 	}else{
 
-		http_response_code(501);
+		//http_response_code(501);
 
-		echo json_encode(array("message" => "No se puso aceptar la solicitud"));
+		echo "no se pudo aceptar la solicitud";
 	}
 
 

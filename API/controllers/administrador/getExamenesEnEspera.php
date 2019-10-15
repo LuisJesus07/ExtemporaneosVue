@@ -1,12 +1,5 @@
 <?php
 
-	header("Access-Control-Allow-Origin: *");//cuañquiera tiene acceso
-	header("Content-Type: aplication/json; charset=UTF-8");
-	header("Access-Control-Allow-Origin: GET");
-
-	include '../../config/database.php';
-	include '../../models/administrador.php';
-
 	$database = new Database();
 	$db = $database->getConnection();
 
@@ -15,10 +8,10 @@
 	$statement = $administrador->getExamenesEnEspera();
 	$num = $statement->rowCount();
 
-	if($num > 0){
+	$examenes = array();
+	$examenes['examenes'] = array();
 
-		$examenes = array();
-		$examenes['examenes'] = array();
+	if($num > 0){
 
 		while($row = $statement->fetch(PDO::FETCH_ASSOC)){
 			extract($row);
@@ -38,16 +31,9 @@
 			array_push($examenes['examenes'], $examen);
 		}
 
-		http_response_code(201);
 
-		echo json_encode($examenes);
-	}else{
-
-		http_response_code(404);
-
-		echo json_encode(array("message" => "No hay examenes"));
 	}
 
-
+	
 
 ?>
