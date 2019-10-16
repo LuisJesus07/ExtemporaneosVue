@@ -10,6 +10,10 @@ class Administrador{
 	public $carrera;
 	public $plan;
 	public $materia;
+	public $nombreCarrera;
+	public $nombrePlan;
+	public $nombreMateria;
+	public $idPlanDeEstudio;
 
 
 	function __construct($db){
@@ -18,14 +22,64 @@ class Administrador{
 
 	function getExamenesByCarrera(){
 
+		$query = "SELECT USU.numControl,USU.nombre,USU.apellidoPaterno,USU.apellidoMaterno,PLAN.nombrePlan,CARR.nombreCarrera,
+			MAT.nombreMateria,SOLI.estado
+			FROM usuarios AS USU 
+			INNER JOIN planesDeEstudio AS PLAN ON PLAN.idPlanDeEstudio=USU.idPlanDeEstudio
+			INNER JOIN carreras AS CARR ON CARR.idCarrera=PLAN.idCarrera
+			INNER JOIN solicitudesExamenes AS SOLI ON USU.idUsuario=SOLI.idUsuario
+			INNER JOIN materias AS MAT ON MAT.idMateria=SOLI.idMateria
+			WHERE CARR.nombreCarrera = :nombreCarrera AND SOLI.estado = 1";
+
+		$statement = $this->conn->prepare($query);
+
+		$statement->bindParam(":nombreCarrera", $this->nombreCarrera);
+
+		$statement->execute();
+
+		return $statement;
 	}
 
 	function getExamenesByPlan(){
+
+		$query = "SELECT USU.numControl,USU.nombre,USU.apellidoPaterno,USU.apellidoMaterno,PLAN.nombrePlan,CARR.nombreCarrera,
+			MAT.nombreMateria,SOLI.estado
+			FROM usuarios AS USU 
+			INNER JOIN planesDeEstudio AS PLAN ON PLAN.idPlanDeEstudio=USU.idPlanDeEstudio
+			INNER JOIN carreras AS CARR ON CARR.idCarrera=PLAN.idCarrera
+			INNER JOIN solicitudesExamenes AS SOLI ON USU.idUsuario=SOLI.idUsuario
+			INNER JOIN materias AS MAT ON MAT.idMateria=SOLI.idMateria
+			WHERE PLAN.nombrePlan = :nombrePlan AND SOLI.estado = 1";
+
+		$statement = $this->conn->prepare($query);
+
+		$statement->bindParam(":nombrePlan", $this->nombrePlan);
+
+		$statement->execute();
+
+		return $statement;
 
 	}
 
 	function getExamenesByMateria(){
 
+		$query = " SELECT USU.numControl,USU.nombre,USU.apellidoPaterno,USU.apellidoMaterno,PLAN.nombrePlan,CARR.nombreCarrera,
+			MAT.nombreMateria,SOLI.estado
+		FROM usuarios AS USU 
+		INNER JOIN planesDeEstudio AS PLAN ON PLAN.idPlanDeEstudio=USU.idPlanDeEstudio
+		INNER JOIN carreras AS CARR ON CARR.idCarrera=PLAN.idCarrera
+		INNER JOIN solicitudesExamenes AS SOLI ON USU.idUsuario=SOLI.idUsuario
+		INNER JOIN materias AS MAT ON MAT.idMateria=SOLI.idMateria
+		WHERE PLAN.idPlanDeEstudio = :idPlanDeEstudio AND MAT.nombreMateria = :nombreMateria";
+
+		$statement = $this->conn->prepare($query);
+
+		$statement->bindParam(":idPlanDeEstudio", $this->idPlanDeEstudio);
+		$statement->bindParam(":nombreMateria", $this->nombreMateria);
+
+		$statement->execute();
+
+		return $statement;
 	}
 
 	function getExamenesEnEspera(){

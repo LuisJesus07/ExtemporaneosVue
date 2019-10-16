@@ -12,7 +12,7 @@
 	    		<div class="pricing-container">
 	    			<div class="plans">
 	    				<h3>Por Carrera</h3>
-	    				<form method="POST" action="examenesPorCarrera_view.php">
+	    				<form method="POST" action="examenesPorCarrera.php">
 
 							<select class="form-control" name="carrera">
 								<option>Licenciatura en Comunicación</option>
@@ -33,7 +33,7 @@
 	    			<div class="plans">
 	    				<h3>Por Plan</h3>
 
-	    				<form method="POST" action="examenesPorPlan_view.php">
+	    				<form method="POST" action="examenesPorPlan.php">
 
 							<select class="form-control" name="plan">
 								<option>Comunicación 2000</option>
@@ -57,7 +57,7 @@
 	    		<div class="pricing-container">
 	    			<div class="plans">
 	    				<h3>Por Materia</h3>
-	    				<form method="POST" action="examenesPorMateria_view.php">
+	    				<form method="POST" action="examenesPorMateria.php">
 
 	    					<label class="display-5">Plan:</label>
 							<select class="form-control" @change="getMaterias"name="plan" v-model="idPlan">
@@ -72,7 +72,7 @@
 
 							
 							<label>Materia: </label>
-							<select class="form-control"name="plan" >
+							<select class="form-control"name="materia" >
 								<option v-for="materia in materias">{{materia.nombreMateria}}</option>
 							</select><br>
 							

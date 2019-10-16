@@ -11,15 +11,6 @@ function desaparecelogin (){
 	}, 500);
 }
 
-function desaparecerRecuperarPassword(){
-	$(".recuperar-password").fadeOut(200);
-	$("#oscurecer").fadeOut();	
-}
-
-function aparecerRecuperarPassword(){
-	$("#oscurecer").fadeIn(400);
-	$(".recuperar-password").fadeIn(100);
-}
 
 function desparecerExito(){
 	$(".registro-exitoso").fadeOut(200);

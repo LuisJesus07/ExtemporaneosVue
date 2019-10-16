@@ -101,6 +101,7 @@ crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="../../plugins/sweetalert.css">
 <script type="text/javascript" src="../../plugins/sweetalert.js"></script>
 <script type="text/javascript" src="../../public/js/login.js"></script>
+<script type="text/javascript" src="../../public/js/recuperarPassword.js"></script>
 
 </body> 
 </html>

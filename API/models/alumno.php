@@ -10,6 +10,7 @@ class Alumno{
 	public $estado;
 	public $fechaRegistro;
 	public $idMateria;
+	public $correo;
 
 
 	function __construct($db){
@@ -125,6 +126,28 @@ class Alumno{
 
 		return $statement;
 
+	}
+
+	function recuperarPassword(){
+
+		$query = "SELECT password FROM usuarios WHERE correo=:correo";
+
+		$statement = $this->conn->prepare($query);
+
+		$statement->bindParam(":correo", $this->correo);
+
+		if($statement->execute()){
+			
+			$pass = $statement->fetch(PDO::FETCH_ASSOC);
+
+			return  $pass['password'];
+
+
+			//return true;
+
+		}
+
+		return false;
 	}
 }
 
