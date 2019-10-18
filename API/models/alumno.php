@@ -110,6 +110,22 @@ class Alumno{
 		return false;
 	}
 
+	/* cambia el estado de un examen en caso de que queden solo dos solicitudes */
+	function cambiarEstadoExamen(){
+
+		$query ="CALL cambiarEstadoExamen(:idUsuario)";
+
+		$statement = $this->conn->prepare($query);
+
+		$statement->bindParam(":idUsuario", $_SESSION['datosUsuario']['idUsuario']);
+
+		if($statement->execute()){
+			return true;
+		}
+
+		return false;
+	}
+
 	function getMateriasByPlan(){
 
 		$query = "SELECT MAT.idMateria,MAT.nombreMateria,PLAN.idPlanDeEstudio

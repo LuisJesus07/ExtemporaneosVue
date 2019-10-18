@@ -7,32 +7,38 @@
     <div class="col">
 
     	<div id="app">
-		    <div class="container mt-5">
-		        <div class="row">
-		            <div class="col-md-11">
-		                <h1 class="h1 text-center">Solicitud De Exámenes Extemporáneos</h1>
-		                <form method="POST">
-		                    <div class="card mt-4">
-		                        <div class="card card-body">
-		                            <label for="" class="text-secondary mt-3">Materia:</label>
-		                            <select name="idMateria" v-model="idMateria" class="form-control" required >
-		                            	
-		                            	<option v-for="materia in materias" :value="materia.idMateria">{{materia.nombreMateria}}</option>
+    		<div class="card"> 
+    			<div class="card-header text-center" style="background-color: #132644;">
+					<h2 class="display-4">Solicitar Examen</h2>
+				</div>
+				<div class="card-body">
+				    <div class="container mt-2">
+				        <div class="row">
+				            <div class="col-md-12">
+				                <form method="POST">
+				                    <div class="card mt-4">
+				                        <div class="card card-body">
+				                            <label for="" class="text-secondary mt-3">Materia:</label>
+				                            <select name="idMateria" v-model="idMateria" class="form-control" required >
+				                            	
+				                            	<option v-for="materia in materias" :value="materia.idMateria">{{materia.nombreMateria}}</option>
 
-		                            </select>
-		                        </div>
-		                        
-		                    </div>
-		                    <div class="alert alert-warning mt-4" role="alert">
-		                        <img src="../../public/img/alerta.png" width="25">
-		                        A partir de la tercera solicitud seran sometidas a revisión para su autorización.
-		                    </div>
-		                    <!--<input type="submit" name="" class="btn btn-primary btn-block" value="Enviar">-->
-		                    <button class="btn btn-primary btn-block" @click.prevent="insertExamen()">Enviar</button>
-		                </form>
-		                
-		            </div>
-		        </div>
+				                            </select>
+				                        </div>
+				                        
+				                    </div>
+				                    <div class="alert alert-warning mt-3" role="alert">
+				                        <img src="../../public/img/alerta.png" width="25">
+				                        A partir de la tercera solicitud seran sometidas a revisión para su autorización.
+				                    </div>
+				                    <!--<input type="submit" name="" class="btn btn-primary btn-block" value="Enviar">-->
+				                    <button class="btn btn-success float-right" @click.prevent="insertExamen()">Enviar</button>
+				                </form>
+				                
+				            </div>
+				        </div>
+				    </div>
+			    </div>
 		    </div>
         </div>
 

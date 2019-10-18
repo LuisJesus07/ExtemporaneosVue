@@ -45,7 +45,7 @@
 		
 	}else{
 
-		http_response_code(404);
+		http_response_code(201);
 
 		echo json_encode(array("message" => "No se encontraron examenes"));
 	}

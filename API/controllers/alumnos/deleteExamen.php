@@ -14,7 +14,9 @@
 
 	$alumno->idSolicitudExamen = isset($_GET['idSolicitudExamen']) ? $_GET['idSolicitudExamen'] : die();
 
-	if($alumno->deleteExamen()){
+	if($alumno->deleteExamen()){ 
+
+		$alumno->cambiarEstadoExamen();
 
 		http_response_code(201);
 
