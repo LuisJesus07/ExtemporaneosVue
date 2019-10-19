@@ -8,14 +8,14 @@
         <ul class="list-group">
             <!-- Separator with title -->
             <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
-                <small>TIPO CUENTA</small>
+                <small>TIPO DE CUENTA</small>
             </li>
             <!-- /END Separator -->
             <!-- Menu with submenu -->
             <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-dashboard fa-fw mr-3"></span> 
-                    <span class="menu-collapsed"><?php if($_SESSION['datosUsuario']['privilegios'] == 1){echo "Aministrador";}else{echo "Alumno";}  ?></span>
+                    <span class="menu-collapsed"><?php if($_SESSION['datosUsuario']['privilegios'] == 1){echo "Administrador";}else{echo "Alumno";}  ?></span>
                     <span class="submenu-icon ml-auto"></span>
                 </div>
             </a>
@@ -49,13 +49,13 @@
             <a href="#" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-clipboard fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Solicitar Examenes</span>
+                    <span class="menu-collapsed">Solicitar Exámenes</span>
                 </div>
             </a>
             <a href="#" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-clipboard fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Mis Examenes <span class="badge badge-pill badge-primary ml-2">5</span></span>
+                    <span class="menu-collapsed">Mis Exámenes <span class="badge badge-pill badge-primary ml-2">5</span></span>
                 </div>
             </a>
 
@@ -91,7 +91,7 @@
             </a>
             <!-- Logo -->
             <li class="list-group-item logo-separator d-flex justify-content-center">
-                <img src='https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg' width="30" height="30" />    
+                <img src='public/img/fb.png' width="30" height="30" />    
             </li>   
         </ul><!-- List Group END-->
     </div><!-- sidebar-container END -->

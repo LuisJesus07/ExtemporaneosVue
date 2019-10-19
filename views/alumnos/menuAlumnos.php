@@ -6,7 +6,7 @@
 	<!-- MAIN -->
     <div class="col">
     	<div class="col text-center">
-			<h1 class="display-4 mt-3">Examenes Extemporaneos</h1>
+			<h1 class="display-4 mt-3">Exámenes Extemporáneos</h1>
 		    <div class="row principal mx-auto">
 
 		    	<div class="col-md-6 mx-auto">
@@ -22,7 +22,7 @@
 		    	<div class="col-md-6">
 		    		<div class="pricing-container">
 		    			<div class="plans">
-		    				<h3>Mis Examenes</h3>
+		    				<h3>Mis Exámenes</h3>
 		    				<img class="d-block mx-auto img" src="../../public/img/consultarExamenes.png">
 		    				<a href="consultarExamenes.php" class="btn mx-auto mt-3 btn-primary btn-lg">Ver</a>
 		    			</div>

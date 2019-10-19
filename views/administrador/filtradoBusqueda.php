@@ -5,7 +5,7 @@
 	<!-- MAIN -->
     <div class="col">
     	<div class="col text-center">
-		<h1 class="display-4 mt-3">Filtrar Busqueda</h1>
+		<h1 class="display-4 mt-3">Filtrar Búsqueda</h1>
 	    <div class="row principal mx-auto">
 
 	    	<div class="col-md-6">

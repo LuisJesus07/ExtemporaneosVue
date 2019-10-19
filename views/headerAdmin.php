@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Administrador - Extemporaneos</title>
+	<title>Administrador - Extemporáneos</title>
 	<!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
 	<link rel="stylesheet" type="text/css" href="../../public/css/estilos.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -28,7 +28,7 @@
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav ml-auto">
 			      <li class="nav-item">
-			        <a class="nav-link" href="menuAdmin.php">Menu</a>
+			        <a class="nav-link" href="menuAdmin.php">Menú</a>
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link" href="solicitarExamen_view.php">Ver Solicitudes</a>
@@ -38,7 +38,7 @@
 			        Aceptar Solicitudes</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="../../API/controllers/login/cerrarSesion.php" tabindex="-1" aria-disabled="true">Salir</a>
+			        <a class="nav-link" href="../../API/controllers/login/cerrarSesion.php" tabindex="-1" aria-disabled="true">Cerrar Sesión</a>
 			      </li>
 			    </ul>
 			  </div>

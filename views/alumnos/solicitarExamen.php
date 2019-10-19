@@ -9,7 +9,7 @@
     	<div id="app">
     		<div class="card"> 
     			<div class="card-header text-center" style="background-color: #132644;">
-					<h2 class="display-4">Solicitar Examen</h2>
+					<h2 class="display-4">Solicitar Exámen</h2>
 				</div>
 				<div class="card-body">
 				    <div class="container mt-2">
@@ -29,7 +29,7 @@
 				                    </div>
 				                    <div class="alert alert-warning mt-3" role="alert">
 				                        <img src="../../public/img/alerta.png" width="25">
-				                        A partir de la tercera solicitud seran sometidas a revisión para su autorización.
+				                        A partir de la tercera solicitud serán sometidas a revisión para su autorización.
 				                    </div>
 				                    <!--<input type="submit" name="" class="btn btn-primary btn-block" value="Enviar">-->
 				                    <button class="btn btn-success float-right" @click.prevent="insertExamen()">Enviar</button>

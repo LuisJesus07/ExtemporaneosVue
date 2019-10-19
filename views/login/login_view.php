@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+	<title>Solicitud de exámenes extemporáneos</title>
 	<link rel="stylesheet" type="text/css" href="../../public/css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -15,7 +15,7 @@
 
 		<section class="principal">
 			<h1>DEPARTAMENTO ACADÉMICO DE CIENCIAS SOCIALES Y JURÍDICAS</h1>
-			<h2>SOLICITUD DE EXÁMENES EXTEMPORANEOS</h2>
+			<h2>SOLICITUD DE EXÁMENES EXTEMPORÁNEOS</h2>
 			<p>Regístrate en la plataforma para realizar tus solicitudes de exámenes extemporáneos, toma en cuenta que por reglamento se tiene derecho a dos exámenes por periodo, a partir de la tercera solicitud serán sujetas a aprobación. </p>
 			<a href="" class="bt-home" id="activarLogin"><i class="fas fa-sign-in-alt separar"></i></i>Ingresar</a>
 			<a href="" class="bt-home" id="activarRegistro"><i class="fa fa-user-plus separar" aria-hidden="true"></i>
@@ -25,12 +25,12 @@
 		<div class="login" id="login">
 			<a href="" class="cerrar" id="cerrar"><i class="fa fa-times" aria-hidden="true"></i></a>
 			<form method="POST">
-				<input type="text" v-model="correoLogin" required placeholder="Usuario">
-				<input type="password" v-model="passwordLogin" requered placeholder="********">
+				<input type="text" v-model="correoLogin" require placeholder="Usuario">
+				<input type="password" v-model="passwordLogin" require placeholder="Contraseña" >
 				<!--<input type="submit" value="Entrar" >-->
 				<button @click.prevent="iniciarSesion">Entrar</button>
 			</form>
-			<a href="#" onclick="aparecerRecuperarPassword()">Olvide mi contrseña</a>
+			<a href="#" onclick="aparecerRecuperarPassword()">Olvide mi contraseña</a>
 		</div>
 		<div class="oscurecer" id="oscurecer"></div>
 
@@ -46,8 +46,8 @@
 			</div>
 			<img src="../../public/img/icono-password.png">
 			<form id="form-recuperar-password">
-				<label>Ingresa tu correo electronico para recuperar tu contrseña.</label>
-				<input type="email" id="correo">
+				<label>Ingresa tu correo electrónico para recuperar tu contraseña.</label>
+				<input type="email" id="correo" required>
 
 				<input type="submit" name="" value="Enviar">
 				<div id="response-password"></div>
@@ -58,14 +58,14 @@
 			<div class="cerrarRegistro" id="cerrarRegistro">
 				x
 			</div>
-			<h1>Registro</h1>
+			<h1>Registrarme</h1>
 			<form id="form-register" autocomplete="off">
 				
 				<input type="text" v-model="numControl" id="numControl" placeholder="Numero de Control" required>
-				<input type="text" v-model="nombre" id="nombre" placeholder="Nombre" required>
+				<input type="text" v-model="nombre" id="nombre" placeholder="Nombre(s)" required>
 				<input type="text" v-model="apellidoPaterno" id="apellidoP" placeholder="Apellido Paterno" required>
-				<input type="text" v-model="apellidoMaterno" id="apellidoM" placeholder="Apellido materno" required>
-				<input type="email" v-model="correo" id="email" placeholder="Correo">
+				<input type="text" v-model="apellidoMaterno" id="apellidoM" placeholder="Apellido Materno" required>
+				<input type="email" v-model="correo" id="email" placeholder="Correo" required>
 				<input type="password" v-model="password" id="password" placeholder="Contraseña" required>
 				<label>Plan de Estudio: </label>
 				<select v-model="idPlanDeEstudio" id="plan" required>
@@ -82,7 +82,7 @@
 				<div id="respuesta"></div>
 
 				<!--<input type="submit" value="Registrarse">-->
-				<button @click.prevent="insertUsuario" class="btn btn-success mx-auto">Agregar</button>
+				<button @click.prevent="insertUsuario" class="btn btn-success mx-auto">Registrarme</button>
 				
 			</form>
 		</div>

@@ -21,7 +21,7 @@ const app = new Vue({
 
 			swal({
 			  title: "Estas seguro?",
-			  text: "Esta solicitud se eliminara!",
+			  text: "Esta solicitud se eliminará!",
 			  type: "warning",
 			  showCancelButton: true,
 			  confirmButtonClass: "btn-danger",
