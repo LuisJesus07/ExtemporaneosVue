@@ -34,6 +34,8 @@
 			  	app.apellidoMaterno = '';
 			  	app.correo = '';
 			  	app.password = '';
+			  	respuesta.innerHTML = '';
+			  	respuesta.classList.remove("error");
 
 			  	//desparecer modal
 			  	$('#registrar').fadeOut(300);
@@ -43,12 +45,20 @@
 			  .catch(function(error){
 			  	var error = error.message;
 
+			  	if(error == "Request failed with status code 400"){
+			  		error = "Ingrese todos los datos.";
+			  	}
+
 			  	if(error == "Request failed with status code 409"){
 			  		error = "El correo que ingreso ya existe.Intenete con otro";
 			  	}
 
 			  	if(error == "Request failed with status code 501" ){
 			  		error = "El numero de control ya existe.Intente con otro";
+			  	}
+
+			  	if(error == "Request failed with status code 406" ){
+			  		error = "Ingrese los datos solcitados correctamente";
 			  	}
 			  	//agregar clase y poner mensaje
 			  	respuesta.classList.add("error");

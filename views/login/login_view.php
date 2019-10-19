@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="../../public/css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../../plugins/sweetalert.css">
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 
 
@@ -28,9 +29,9 @@
 				<input type="text" v-model="correoLogin" require placeholder="Usuario">
 				<input type="password" v-model="passwordLogin" require placeholder="Contraseña" >
 				<!--<input type="submit" value="Entrar" >-->
-				<button @click.prevent="iniciarSesion">Entrar</button>
+				<button @click.prevent="iniciarSesion" class="btn-primary btn-entrar">Entrar</button>
 			</form>
-			<a href="#" onclick="aparecerRecuperarPassword()">Olvide mi contraseña</a>
+			<a href="#" class="olvide-pass" onclick="aparecerRecuperarPassword()">Olvide mi contraseña</a>
 		</div>
 		<div class="oscurecer" id="oscurecer"></div>
 
@@ -56,7 +57,7 @@
 
 		<div class="registrar" id="registrar">
 			<div class="cerrarRegistro" id="cerrarRegistro">
-				x
+				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
 			<h1>Registrarme</h1>
 			<form id="form-register" autocomplete="off">
@@ -82,7 +83,7 @@
 				<div id="respuesta"></div>
 
 				<!--<input type="submit" value="Registrarse">-->
-				<button @click.prevent="insertUsuario" class="btn btn-success mx-auto">Registrarme</button>
+				<button @click.prevent="insertUsuario" class="btn-primary btn-registrar">Registrarme</button>
 				
 			</form>
 		</div>

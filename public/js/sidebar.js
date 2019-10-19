@@ -9,6 +9,7 @@ $('[data-toggle=sidebar-colapse]').click(function() {
     SidebarCollapse();
 });
 
+
 function SidebarCollapse () {
     $('.menu-collapsed').toggleClass('d-none');
     $('.sidebar-submenu').toggleClass('d-none');
@@ -26,3 +27,10 @@ function SidebarCollapse () {
     // Collapse/Expand icon
     $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
 }
+
+
+if(screen.width < 600){
+    this.SidebarCollapse();
+}
+
+

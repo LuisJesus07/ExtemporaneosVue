@@ -46,28 +46,28 @@
             <!-- Mostrar sidebar dependiendo del tipo de usuario alumno=2 admin=1-->
             <?php if($_SESSION['datosUsuario']['privilegios'] == 2){ ?>
             <!-- /END Separator -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="solicitarExamen.php" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-clipboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Solicitar Exámenes</span>
                 </div>
             </a>
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="consultarExamenes.php" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-clipboard fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Mis Exámenes <span class="badge badge-pill badge-primary ml-2">5</span></span>
+                    <span class="menu-collapsed">Mis Exámenes</span>
                 </div>
             </a>
 
             <?php }else{ ?>
 
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="filtradoBusqueda.php" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-clipboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Ver Solicitudes</span>
                 </div>
             </a>
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
+            <a href="solicitudesEnEspera.php" class="bg-dark list-group-item list-group-item-action">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span class="fa fa-clipboard fa-fw mr-3"></span>
                     <span class="menu-collapsed">Aceptar Solicitudes</span>
@@ -77,13 +77,7 @@
             <!-- Separator without title -->
             <li class="list-group-item sidebar-separator menu-collapsed"></li>            
             <!-- /END Separator -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-question fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Ayuda</span>
-                </div>
-            </a>
-            <a href="#" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+            <a data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
                 <div class="d-flex w-100 justify-content-start align-items-center">
                     <span id="collapse-icon" class="fa fa-2x mr-3"></span>
                     <span id="collapse-text" class="menu-collapsed">Ocultar</span>

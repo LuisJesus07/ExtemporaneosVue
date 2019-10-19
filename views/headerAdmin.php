@@ -31,10 +31,10 @@
 			        <a class="nav-link" href="menuAdmin.php">Menú</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="solicitarExamen_view.php">Ver Solicitudes</a>
+			        <a class="nav-link" href="filtradoBusqueda.php">Ver Solicitudes</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="consultarExamenes_view.php">
+			        <a class="nav-link" href="solicitudesEnEspera.php">
 			        Aceptar Solicitudes</a>
 			      </li>
 			      <li class="nav-item">

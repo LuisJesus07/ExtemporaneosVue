@@ -28,13 +28,13 @@
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav ml-auto">
 			      <li class="nav-item">
-			        <a class="nav-link" href="menuAlumnos_view.php">Menú</a>
+			        <a class="nav-link" href="menuAlumnos.php">Menú</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="solicitarExamen_view.php">Solicitar Exámen</a>
+			        <a class="nav-link" href="solicitarExamen.php">Solicitar Exámen</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="consultarExamenes_view.php">Mis Exámenes</a>
+			        <a class="nav-link" href="consultarExamenes.php">Mis Exámenes</a>
 			      </li>
 			      <li class="nav-item">
 			        <a class="nav-link" href="../../API/controllers/login/cerrarSesion.php" tabindex="-1" aria-disabled="true">Cerrar Sesión</a>
