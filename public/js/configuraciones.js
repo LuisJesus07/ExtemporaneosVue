@@ -22,7 +22,7 @@ const app = new Vue({
 			axios.get('../../API/controllers/administrador/activarPeriodoSolicitudes.php')
 			.then(function(response){
 				//console.log(response.data);
-				swal("Activado!", "El periodo de solicitudes se encuntra activo.", "success");
+				swal("Activado!", "El período de solicitudes se encuentra activo.", "success");
 				app.verificarEstado();
 			})
 			.catch(function(error){
@@ -33,7 +33,7 @@ const app = new Vue({
 			axios.get('../../API/controllers/administrador/desactivarPeriodoSolicitudes.php')
 			.then(function(response){
 				//console.log(response.data);
-				swal("Deactivado!", "El periodo de solicitudes se encuntra inactivo.", "success");
+				swal("Desactivado!", "El período de solicitudes se encuentra inactivo.", "success");
 				app.verificarEstado();
 			})
 			.catch(function(error){
@@ -43,7 +43,7 @@ const app = new Vue({
 		reiniciarCiclo: function(){
 			swal({
 			  title: "Estas Seguro?",
-			  text: "Todos los registros de examenes se borraran!",
+			  text: "Todos los registros de exámenes se borrarán!",
 			  type: "warning",
 			  showCancelButton: true,
 			  confirmButtonClass: "btn-danger",
@@ -54,7 +54,7 @@ const app = new Vue({
 			  axios.get('../../API/controllers/administrador/reiniciarCiclo.php')
 				.then(function(response){
 					console.log(response.data);
-					swal("Reiniciado!", "El ciclo se ha reiniciado con exito.", "success");
+					swal("Reiniciado!", "El ciclo se ha reiniciado con éxito.", "success");
 				})
 				.catch(function(error){
 					console.log(error.data);
