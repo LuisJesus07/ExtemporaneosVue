@@ -90,9 +90,9 @@
                 </div>
             </a>
             <!-- Logo -->
-            <li class="list-group-item logo-separator d-flex justify-content-center">
-                <img src='public/img/fb.png' width="30" height="30" />    
-            </li>   
+            <a href="https://www.facebook.com/DeptoCSyJUABCS/" target="_blank"><li class="list-group-item logo-separator d-flex justify-content-center">
+                <img src='../../public/img/fb.png' width="30" height="30" />    
+            </li></a>  
         </ul><!-- List Group END-->
     </div><!-- sidebar-container END -->
 
