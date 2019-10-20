@@ -20,11 +20,11 @@ $(function(){//Código JQUERY:
             }else{
 
                 if(response == 2){
-                    $('#response').html("<p>Ese numero de control ya exite.</p>");
+                    $('#response').html("<p>Ese número de control ya existe.</p>");
                     $('#response').addClass('error');
                     //$('#email').val("");
                 }else{
-                    $('#response').html("<p>Ese correo ya existe, intenta con otro.</p>");
+                    $('#response').html("<p>Ese correo ya existe, intente con otro.</p>");
                     $('#response').addClass('error');
                     //$('#email').val("");
                 }

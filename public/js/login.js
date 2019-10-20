@@ -25,7 +25,7 @@
 			})
 			  .then(function(response){
 			  	//console.log(response.data.message);
-			  	swal("Registrado!", "Registro completado con exito.", "success");
+			  	swal("Registrado!", "Registro completado con éxito.", "success");
 
 			  	//limpiar inputs
 			  	app.numControl = '';
@@ -50,15 +50,15 @@
 			  	}
 
 			  	if(error == "Request failed with status code 409"){
-			  		error = "El correo que ingreso ya existe.Intenete con otro";
+			  		error = "El correo que ingreso ya existe. Intente con otro.";
 			  	}
 
 			  	if(error == "Request failed with status code 501" ){
-			  		error = "El numero de control ya existe.Intente con otro";
+			  		error = "El número de control ya existe. Intente con otro.";
 			  	}
 
 			  	if(error == "Request failed with status code 406" ){
-			  		error = "Ingrese los datos solcitados correctamente";
+			  		error = "Ingrese los datos solicitados correctamente";
 			  	}
 			  	//agregar clase y poner mensaje
 			  	respuesta.classList.add("error");
@@ -90,7 +90,7 @@
 				}
 
 				if(tipoUsuario == "error"){
-					swal("Error!", "Usuario o contraseña incorrecto.", "warning");
+					swal("Error!", "Usuario o contraseña incorrectos.", "warning");
 				}
 			})
 			.catch(function(error){

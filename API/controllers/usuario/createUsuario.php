@@ -33,24 +33,24 @@
 		//validar numero de control
 		if(!is_numeric($data->numControl) || strlen($data->numControl) > 10){
 			# ingrese num control valido
-			$errors .='Ingresa numero de control valido';
+			$errors .='Ingresa un número de control válido.';
 			http_response_code(406);
 		}
 
 		//validar nombre
 		if(is_numeric($data->nombre) || strlen($data->nombre) > 80){
-			$errors .='Ingresa un nombre valido';
+			$errors .='Ingresa un nombre válido.';
 			http_response_code(406);
 		}
 
 		//validar apellidos
 		if(is_numeric($data->apellidoPaterno) || strlen($data->apellidoPaterno) > 50){
-			$errors .='Ingresa apellido paterno valido';
+			$errors .='Ingresa apellido paterno válido.';
 			http_response_code(406);
 		}
 
 		if(is_numeric($data->apellidoMaterno) || strlen($data->apellidoMaterno) > 50){
-			$errors .='Ingresa apellido materno valido';
+			$errors .='Ingresa apellido materno válido.';
 			http_response_code(406);
 		}
 
@@ -59,12 +59,12 @@
 		$data->correo = filter_var($data->correo, FILTER_SANITIZE_EMAIL);
 		if (!filter_var($data->correo, FILTER_VALIDATE_EMAIL)) {
 			# ingrese correo valido
-			$errors .= "ingresa un correo valido"; 
+			$errors .= "Ingresa un correo electrónico válido."; 
 			http_response_code(406);
 		}
 
 		if(strlen($data->password) > 16){
-			$errors .= "Ingresa una contraseña menor a los 16 caracteres";
+			$errors .= "Ingresa una contraseña menor a los 16 caracteres.";
 			http_response_code(406);
 		}
 
@@ -84,7 +84,7 @@
 				//confilc response
 				http_response_code(409);
 
-				echo json_encode(array("message"=>"El correo que ingreso ya existe.Intenete con otro"));
+				echo json_encode(array("message"=>"El correo que ingreso ya existe. Intente con otro"));
 			}else{
 				//insertar el usuario
 				if($usuario->create()){
