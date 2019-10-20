@@ -1,3 +1,7 @@
+if(screen.width < 600){
+    this.SidebarCollapse();
+}
+
 // Hide submenus
 $('#body-row .collapse').collapse('hide'); 
 
@@ -29,8 +33,6 @@ function SidebarCollapse () {
 }
 
 
-if(screen.width < 600){
-    this.SidebarCollapse();
-}
+
 
 
