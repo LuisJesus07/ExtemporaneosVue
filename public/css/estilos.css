@@ -111,16 +111,27 @@ body {
     font-size: 20px;
     color: #ffffff;
     border-radius: 6px;
-    border: 2px solid black;
+    border: 2px solid #2f854f;
 }
 
 .dt-button span{
-    color: white;
+    color: #2f854f;
 }
 
 
 .buttons-excel{
+    background-color: white;
+}
+
+.buttons-excel:hover{
     background-color: #2f854f;
+    transition: all linear .3s;
+    transform: scale(1.1);
+}
+
+.buttons-excel:hover > span{
+    transition: all linear .3s;
+    color: white;
 }
 
 .dataTables_filter{

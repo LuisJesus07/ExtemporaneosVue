@@ -8,7 +8,7 @@
     <div class="col">
 		<div class="card">
 			<div class="card-header text-center" style="background-color: #132644;">
-				<h2 class="display-4">Examenes Por Plan</h2>
+				<h2 class="display-4">Exámenes Por Plan</h2>
 			</div>
 			<div class="card-body">
 				<table class="table table-hover table-bordered mt-2" id="tabla">

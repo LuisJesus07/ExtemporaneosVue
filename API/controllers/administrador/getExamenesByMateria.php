@@ -40,7 +40,7 @@
 		//var_dump($examenes);
 
 	}else{
-		echo "no hay";
+		//echo "no hay";
 	}
 
 ?>
