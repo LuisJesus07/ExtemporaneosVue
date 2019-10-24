@@ -7,8 +7,6 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../../plugins/sweetalert.css">
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-
-
 </head>
 <body>
 
@@ -17,7 +15,7 @@
 		<section class="principal">
 			<h1>DEPARTAMENTO ACADÉMICO DE CIENCIAS SOCIALES Y JURÍDICAS</h1>
 			<h2>SOLICITUD DE EXÁMENES EXTEMPORÁNEOS</h2>
-			<p>Regístrate en la plataforma para realizar tus solicitudes de exámenes extemporáneos, toma en cuenta que por reglamento se tiene derecho a dos exámenes por periodo, a partir de la tercera solicitud serán sujetas a aprobación. </p>
+			<p>Regístrate en la plataforma para realizar tus solicitudes de exámenes extemporáneos, toma en cuenta que por reglamento se tiene derecho a dos exámenes por período, a partir de la tercera solicitud serán sujetas a aprobación. </p>
 			<a href="" class="bt-home" id="activarLogin"><i class="fas fa-sign-in-alt separar"></i></i>Ingresar</a>
 			<a href="" class="bt-home" id="activarRegistro"><i class="fa fa-user-plus separar" aria-hidden="true"></i>
 	 		Registrarme</a>
@@ -26,7 +24,7 @@
 		<div class="login" id="login">
 			<a href="" class="cerrar" id="cerrar"><i class="fa fa-times" aria-hidden="true"></i></a>
 			<form method="POST">
-				<input type="text" v-model="correoLogin" require placeholder="Usuario">
+				<input type="text" v-model="correoLogin" require placeholder="Correo">
 				<input type="password" v-model="passwordLogin" require placeholder="Contraseña" >
 				<!--<input type="submit" value="Entrar" >-->
 				<button @click.prevent="iniciarSesion" class="btn-primary btn-entrar">Entrar</button>
