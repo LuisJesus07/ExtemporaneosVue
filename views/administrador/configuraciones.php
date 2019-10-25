@@ -12,7 +12,7 @@
 			<div class="row principal mx-auto">
 			    <div class="col-md-6">
 
-			    	<div class="card card-config mt-3">
+			    	<div class="card card-config mt-3 shadow">
 			    		<div class="card-header" style="background-color: #132644;">
 			    			<h3>Periodo de solicitudes</h3>
 			    		</div>
@@ -39,7 +39,7 @@
 
 			    <div class="col-md-6">
 
-			    	<div class="card card-config mt-3">
+			    	<div class="card card-config mt-3 shadow">
 			    		<div class="card-header" style="background-color: #f8d7da; color: #721c24;">
 			    			<h3>Reiniciar ciclo de extemporáneos</h3>
 			    		</div>

@@ -11,7 +11,7 @@
 				<h2 class="display-4">Solicitudes En Espera</h2>
 			</div>
 			<div class="card-body">
-				<table class="table table-hover table-bordered mt-2" id="tabla">
+				<table class="table table-hover table-bordered mt-2 shadow p-3 mb-5 bg-white rounded" id="tabla">
 		            <thead class="thead-light">
 		                <tr>
 		                    <th class="text-secondary">Número de control</th>
@@ -27,7 +27,7 @@
 		            </thead>
 		            <tbody id="tbody-examenes">
 		            	<?php foreach($examenes['examenes'] as $examen){ ?>
-						<tr class="pendiente" id="fila-<?php echo $examen['idSolicitudExamen'] ?>">
+						<tr id="fila-<?php echo $examen['idSolicitudExamen'] ?>">
 							<td><?php echo $examen['numControl'] ?></td>
 							<td><?php echo $examen['nombre'] ?></td>
 							<td><?php echo $examen['apellidoPaterno'] ?></td>

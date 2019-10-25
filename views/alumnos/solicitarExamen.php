@@ -19,7 +19,7 @@
 				                    <div class="card mt-4">
 				                        <div class="card card-body">
 				                            <label for="" class="text-secondary mt-3">Materia:</label>
-				                            <select name="idMateria" v-model="idMateria" class="form-control" required >
+				                            <select name="idMateria" v-model="idMateria" class="form-control shadow-sm" required >
 				                            	
 				                            	<option v-for="materia in materias" :value="materia.idMateria">{{materia.nombreMateria}}</option>
 

@@ -11,7 +11,7 @@
 				<h2 class="display-4">Exámenes Por Carrera</h2>
 			</div>
 			<div class="card-body">
-				<table class="table table-hover table-bordered mt-2" id="tabla">
+				<table class="table table-hover shadow p-3 mb-5 bg-white rounded table-bordered mt-2" id="tabla">
 		            <thead class="thead-light">
 		                <tr>
 		                    <th class="text-secondary">Número de control</th>

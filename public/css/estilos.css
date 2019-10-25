@@ -3,6 +3,10 @@ body {
 	font-family: 'Titillium Web', sans-serif;
 }
 
+select:hover{
+    cursor: pointer;
+}
+
 .col{
 	background-color: #f7f7f7;
 }
@@ -194,6 +198,9 @@ body {
 
 
 /* estilos sidebar*/
+    .btn-ocultar:hover{
+        cursor: pointer;
+    }
 	#body-row {
         margin-left: 0;
         margin-right: 0;

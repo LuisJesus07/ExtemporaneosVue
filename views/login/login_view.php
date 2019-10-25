@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="../../plugins/sweetalert.css">
+	<link rel="icon" type="image/vnd.microsoft.icon" href="../../public/img/favicon.ico">
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 </head>
 <body>
@@ -58,14 +59,14 @@
 				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
 			<h1>Registrarme</h1>
-			<form id="form-register" autocomplete="off">
+			<form id="form-register" autocomplete="off" action="">
 				
-				<input type="text" v-model="numControl" id="numControl" placeholder="Numero de Control" required>
-				<input type="text" v-model="nombre" id="nombre" placeholder="Nombre(s)" required>
-				<input type="text" v-model="apellidoPaterno" id="apellidoP" placeholder="Apellido Paterno" required>
-				<input type="text" v-model="apellidoMaterno" id="apellidoM" placeholder="Apellido Materno" required>
-				<input type="email" v-model="correo" id="email" placeholder="Correo" required>
-				<input type="password" v-model="password" id="password" placeholder="Contraseña" required>
+				<input type="text" v-model="numControl" id="numControl" placeholder="Numero de Control" required maxlength="10">
+				<input type="text" v-model="nombre" id="nombre" placeholder="Nombre(s)" required maxlength="80">
+				<input type="text" v-model="apellidoPaterno" id="apellidoP" placeholder="Apellido Paterno" required maxlength="50">
+				<input type="text" v-model="apellidoMaterno" id="apellidoM" placeholder="Apellido Materno" required maxlength="50">
+				<input type="email" v-model="correo" id="email" placeholder="Correo" required maxlength="50">
+				<input type="password" v-model="password" id="password" placeholder="Contraseña" required maxlength="16">
 				<label>Plan de Estudio: </label>
 				<select v-model="idPlanDeEstudio" id="plan" required>
 					<option value="1">Comunicación 2000</option>
