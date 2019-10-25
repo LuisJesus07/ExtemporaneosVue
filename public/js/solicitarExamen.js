@@ -25,7 +25,7 @@ const app = new Vue({
 			})
 			.then(function(response){
 				//console.log(response.data);
-				swal("Solicitud enviada!", "Solicitud realizada con exito", "success");
+				swal("Solicitud enviada!", "Solicitud realizada con éxito", "success");
 			})
 			.catch(function(error){
 				console.log(error.data);

@@ -2,12 +2,12 @@
 function aparecerRecuperarPassword(){
     swal({
       title: "Recuperar contraseña",
-      text: "Escribe tu correo electronico",
+      text: "Escribe tu correo electrónico",
       type: "input",
       showCancelButton: true,
       closeOnConfirm: false,
       showLoaderOnConfirm: true,
-      inputPlaceholder: "Correo electronico"
+      inputPlaceholder: "Correo electrónico"
     }, function (inputValue) {
       setTimeout(function () {
 

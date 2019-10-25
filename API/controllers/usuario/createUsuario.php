@@ -108,7 +108,7 @@
 	}else{
 		http_response_code(400);
 
-		echo json_encode(array("message"=>"No se ha podido registrar, faltan datos"));
+		echo json_encode(array("message"=>"No se ha podido registrar, completa todos los campos."));
 	}
 
 
