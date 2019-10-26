@@ -16,7 +16,7 @@ const app = new Vue({
 
 			})
 			.catch(function(error){
-				console.log(error);
+				//console.log(error);
 			});
 		},
 		insertExamen: function(){
@@ -28,7 +28,7 @@ const app = new Vue({
 				swal("Solicitud enviada!", "Solicitud realizada con éxito", "success");
 			})
 			.catch(function(error){
-				console.log(error.data);
+				//console.log(error.data);
 			});
 		},
 		verificarPeriodo: function(){
@@ -59,7 +59,7 @@ const app = new Vue({
 				
 			})
 			.catch(function(error){
-				console.log(error.data);
+				//console.log(error.data);
 			});
 		}
 	}

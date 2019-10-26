@@ -78,7 +78,7 @@
 				password: app.passwordLogin,
 			})
 			.then(function(response){
-				console.log(response.data);
+				//console.log(response.data);
 				const tipoUsuario = response.data;
 
 				if(tipoUsuario == "alumno"){
@@ -94,7 +94,7 @@
 				}
 			})
 			.catch(function(error){
-				console.log(error);
+				//console.log(error);
 			})
 		}
 	}

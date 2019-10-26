@@ -15,7 +15,7 @@ const app = new Vue({
 
 			})
 			.catch(function(error){
-				console.log(error.data)
+				//console.log(error.data)
 			});
 		},
 		activarPeriodo: function(){
@@ -26,7 +26,7 @@ const app = new Vue({
 				app.verificarEstado();
 			})
 			.catch(function(error){
-				console.log(error.data);
+				//console.log(error.data);
 			});
 		},
 		desactivarPeriodo: function(){
@@ -37,7 +37,7 @@ const app = new Vue({
 				app.verificarEstado();
 			})
 			.catch(function(error){
-				console.log(error.data);
+				//console.log(error.data);
 			});
 		},
 		reiniciarCiclo: function(){
@@ -53,11 +53,11 @@ const app = new Vue({
 			function(){
 			  axios.get('../../API/controllers/administrador/reiniciarCiclo.php')
 				.then(function(response){
-					console.log(response.data);
+					//console.log(response.data);
 					swal("Reiniciado!", "El ciclo se ha reiniciado con éxito.", "success");
 				})
 				.catch(function(error){
-					console.log(error.data);
+					//console.log(error.data);
 				})
 			});
 		}

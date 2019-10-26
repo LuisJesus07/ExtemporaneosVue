@@ -13,7 +13,7 @@ const app = new Vue({
 				app.materias = response.data.materias;
 			})
 			.catch(function(error){
-				console.log(error.data);
+				//console.log(error.data);
 			})
 		}
 	}

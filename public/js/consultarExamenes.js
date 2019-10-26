@@ -10,11 +10,11 @@ const app = new Vue({
 		getExamenes: function(){
 			axios.get('../../API/controllers/alumnos/getExamenes.php')
 			.then(function(response){
-				console.log(response.data.examenes);
+				//console.log(response.data.examenes);
 				app.examenes = response.data.examenes;
 			})
 			.catch(function(error){
-				console.log(error);
+				//console.log(error);
 			});
 		},
 		eliminarSolicitud: function(idsolicitud){
@@ -31,7 +31,7 @@ const app = new Vue({
 			function(){
 				axios.get('../../API/controllers/alumnos/deleteExamen.php?idSolicitudExamen='+idsolicitud)
 				.then(function(response){
-					console.log(response.data);
+					//console.log(response.data);
 					swal("Eliminada!", "La solicitud ha sido eliminada", "success");
 					app.getExamenes();
 				})

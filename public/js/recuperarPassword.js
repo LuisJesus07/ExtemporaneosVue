@@ -16,7 +16,7 @@ function aparecerRecuperarPassword(){
             };
             let url = '../../API/controllers/alumnos/recuperarPassword.php';//Url al archivo de php que haremos el insert
             $.post(url, postData, function(response){//Método POST de Jquery para mandar los datos y la url
-                console.log(response);
+                //console.log(response);
                 if(response==1){
                    swal("Recibiste tu contraseña al correo!");
                 }else{
