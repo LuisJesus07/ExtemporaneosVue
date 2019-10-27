@@ -1,4 +1,9 @@
 $(document).ready(function() {
+	$('.img-cargando').fadeOut(200, aparecerTabla);
+	function aparecerTabla(){
+		$('.body-examenes').fadeIn(200);
+	}
+
     $('#tabla').DataTable( {
         dom: 'Bfrtip',
         buttons: [

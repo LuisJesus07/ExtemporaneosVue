@@ -10,7 +10,10 @@
 			<div class="card-header text-center" style="background-color: #132644;">
 				<h2 class="display-4">Solicitudes En Espera</h2>
 			</div>
-			<div class="card-body">
+			<div class="img-cargando">
+				<img src="../../public/img/cargando.gif">
+			</div>
+			<div class="card-body body-examenes">
 				<table class="table table-hover table-bordered mt-2 shadow p-3 mb-5 bg-white rounded" id="tabla">
 		            <thead class="thead-light">
 		                <tr>
