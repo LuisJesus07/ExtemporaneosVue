@@ -29,16 +29,16 @@
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav ml-auto">
 			      <li class="nav-item">
-			        <a class="nav-link" href="menuAlumnos.php">Menú</a>
+			        <a class="nav-link" href="menuAlumnos.php"><i class="fas fa-home"></i> Inicio</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="solicitarExamen.php">Solicitar Exámen</a>
+			        <a class="nav-link" href="solicitarExamen.php"><i class="fa fa-clipboard fa-fw"></i> Solicitar Examen</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="consultarExamenes.php">Mis Exámenes</a>
+			        <a class="nav-link" href="consultarExamenes.php"><i class="fa fa-clipboard fa-fw"></i> Mis Exámenes</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="../../API/controllers/login/cerrarSesion.php" tabindex="-1" aria-disabled="true">Cerrar Sesión</a>
+			        <a class="nav-link" href="../../API/controllers/login/cerrarSesion.php" tabindex="-1" aria-disabled="true"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
 			      </li>
 			    </ul>
 			  </div>

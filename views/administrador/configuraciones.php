@@ -14,10 +14,10 @@
 
 			    	<div class="card card-config mt-3 shadow">
 			    		<div class="card-header" style="background-color: #132644;">
-			    			<h3>Periodo de solicitudes</h3>
+			    			<h3>Período de solicitudes</h3>
 			    		</div>
 			    		<div class="card-body">
-			    			<p>Cuando el periodo este activo, los alumnos podrán realizar las solicitudes de exámenes, en caso de no estarlo, las solicitudes no serán registradas.</p>
+			    			<p>Cuando el período este activo, los alumnos podrán realizar las solicitudes de exámenes, en caso de no estarlo, las solicitudes no serán registradas.</p>
 
 			    				<div v-if="estado == 'activo'">
 				    				<h4 class="alert alert-success">Estado Actual : Activo</h4>
@@ -44,7 +44,7 @@
 			    			<h3>Reiniciar ciclo de extemporáneos</h3>
 			    		</div>
 			    		<div class="card-body">
-			    			<p>Al reiniciar el ciclo de extemporáneos se borraran todos los registros de exámenes actuales, por lo que solo se debe de reiniciar una vez concluido el período de solicitudes.</p>
+			    			<p>Al reiniciar el ciclo de extemporáneos se borrarán todos los registros de exámenes actuales, por lo que solo se debe de reiniciar una vez concluido el período de solicitudes.</p>
 
 			    			<button class="btn mx-auto mt-3 btn-outline-danger btn-lg btn-reiniciar" @click.prevent="reiniciarCiclo">Reiniciar</button>
 			    		</div>

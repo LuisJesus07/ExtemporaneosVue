@@ -8,7 +8,7 @@
     	<div id="app">
 	    	<div class="card">
 				<div class="card-header text-center" style="background-color: #132644;">
-					<h2 class="display-4">Mis Examenes</h2>
+					<h2 class="display-4">Mis Exámenes</h2>
 				</div>
 				<div class="card-body">
 					<div id="respuesta"></div>

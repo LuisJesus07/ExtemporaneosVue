@@ -29,17 +29,17 @@
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul class="navbar-nav ml-auto">
 			      <li class="nav-item">
-			        <a class="nav-link" href="menuAdmin.php">Menú</a>
+			        <a class="nav-link" href="menuAdmin.php"><i class="fas fa-home"></i> Inicio</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="filtradoBusqueda.php">Ver Solicitudes</a>
+			        <a class="nav-link" href="filtradoBusqueda.php"><i class="fa fa-clipboard fa-fw"></i> Ver Solicitudes</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="solicitudesEnEspera.php">
+			        <a class="nav-link" href="solicitudesEnEspera.php"><i class="fa fa-clipboard fa-fw"></i>
 			        Aceptar Solicitudes</a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="../../API/controllers/login/cerrarSesion.php" tabindex="-1" aria-disabled="true">Cerrar Sesión</a>
+			        <a class="nav-link" href="../../API/controllers/login/cerrarSesion.php" tabindex="-1" aria-disabled="true"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
 			      </li>
 			    </ul>
 			  </div>

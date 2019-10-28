@@ -9,7 +9,7 @@
     	<div id="app">
     		<div class="card"> 
     			<div class="card-header text-center" style="background-color: #132644;">
-					<h2 class="display-4">Solicitar Exámen</h2>
+					<h2 class="display-4">Solicitar Examen</h2>
 				</div>
 				<div class="card-body">
 				    <div class="container mt-2">
