@@ -24,7 +24,7 @@ btnEstadoPeriodo.addEventListener("click", function(){
 			btn.classList.remove('btn-success');
 			btn.classList.add('btn-danger');
 
-			swal("Periodo Activado!", "El periodo de solicitudes esta activo", "success");
+			swal("Período Activado!", "El período de solicitudes esta activo", "success");
 
 		}else{
 			if (response == "Perido desactivado") {
@@ -38,7 +38,7 @@ btnEstadoPeriodo.addEventListener("click", function(){
 				btn.classList.remove('btn-danger');
 				btn.classList.add('btn-success');
 
-				swal("Periodo Desactivado!", "El periodo de solicitudes esta inactivo", "success")
+				swal("Período Desactivado!", "El período de solicitudes esta inactivo", "success")
 			}
 		}
 		
