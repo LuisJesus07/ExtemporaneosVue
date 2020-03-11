@@ -13,7 +13,7 @@
 				</div>
 				<div class="card-body">
 				    <div class="container mt-2">
-				    	<b>Seleccione una materia y de clic en el botón enviar para mandar su solicitud.</b>
+				    	<b>Seleccione una materia y de clic en el botón enviar para mandar su solicitud. </b>
 				        <div class="row">
 				            <div class="col-md-12">
 				                <form method="POST">
