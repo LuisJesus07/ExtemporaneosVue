@@ -5,7 +5,8 @@ const app = new Vue({
 	},
 	data:{
 		materias:[],
-		idMateria: ''
+		idMateria: '',
+		select_materias: document.querySelector('#select_materias')
 	},
 	methods:{
 		getMaterias: function(){
@@ -26,9 +27,12 @@ const app = new Vue({
 			.then(function(response){
 				//console.log(response.data);
 				swal("Solicitud enviada!", "Solicitud realizada con éxito", "success");
+				//console.log(select_materias)
+				this.select_materias.selectedIndex = 0
 			})
 			.catch(function(error){
 				//console.log(error.data);
+				swal("Error en el servidor!", "No se pudo realizar la solicitud", "error");
 			});
 		},
 		verificarPeriodo: function(){

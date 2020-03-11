@@ -13,15 +13,17 @@
 				</div>
 				<div class="card-body">
 				    <div class="container mt-2">
+				    	<b>Seleccione una materia y de clic en el botón enviar para mandar su solicitud.</b>
 				        <div class="row">
 				            <div class="col-md-12">
 				                <form method="POST">
 				                    <div class="card mt-4">
 				                        <div class="card card-body">
 				                            <label for="" class="text-secondary mt-3">Materia:</label>
-				                            <select name="idMateria" v-model="idMateria" class="form-control shadow-sm" required >
-				                            	
-				                            	<option v-for="materia in materias" :value="materia.idMateria">{{materia.nombreMateria}}</option>
+				                            <select name="idMateria" v-model="idMateria" class="form-control shadow-sm" required id="select_materias">
+				                            	<option value="" disabled selected>Seleccione una materia...</option>
+				                            	<option v-for="materia in materias" :value="materia.idMateria">
+				                            	{{materia.nombreMateria}}</option>
 
 				                            </select>
 				                        </div>
